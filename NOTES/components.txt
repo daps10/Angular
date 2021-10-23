@@ -12,4 +12,52 @@
     - Edit Components.
 
     - Make new Component.
+
+
+- All the component we wanna make that all created in the app component then we can use them.
+
+- When you create new component at that time automatically created 4 files.
+    - app.component.html    (All html code)
+    - app.component.css     (All css code)
+    - app.component.specs.ts
+    - app.component.ts      (All logical parts, calling api, declare function n all.)
+
+
+- component's name always add in the component.ts fle.
+
+    @Component({
+        selector: 'app-root',                   //component name defined
+        templateUrl: './app.component.html',    // html template file name.
+        styleUrls: ['./app.component.css']      // css template file name.
+    })
+    
+- Load component in the html file for that always remember the which component you wanna add.
+
+- After that checked component later that particular component can use in the app like bellow way.
+    <app-root></app-root>
+
+    so this way we can fetch that component.
+
+
+// Make new component :: 
+
+    command :: ng generate component your-component-name-here
+    short command :: ng g c <componentname>
+
+
+    Through above command you can create component .
+
+
+// how can we use new component in existing file.
+
+    - For that you can do this with the selector name.
+    - which is in the component.js file.
+    - So selector file Through we can add that component.
+
+
+// what if we don;t add component in main file.
+
+    - its not effect in the html file.
+    - just you can't use any component.ts file in the added componentfile.
+
     
