@@ -1,0 +1,53 @@
+
+
+######### points 
+
+    what is interpolation 
+    with variables
+    with functions
+    with object
+    with array
+    and much more.
+
+
+Definition ::  (app.component.ts => app.component.html)
+
+Angular interpolation is used display a component property in the respective view 
+template with double curly braces syntax. We can display all kind of properties 
+data into view e.g. string, number, date, arrays, list or map.
+
+
+1) string :: 
+
+    in component we just use string with variables n all.
+    we didn't need to use var, let const keyword.
+
+2) functions ::
+
+    - for functions do not need to use function keyword.
+    - just start function bellow way.
+        test () {
+            return true;
+        }
+3) Objects ::
+    - we can use objects same as the we can use in the javascript.
+    - like this way we can use 
+        object = {
+            key : value
+        }
+    
+4) Array :: 
+    - for array we can use like the [a,aa,aaa] way.
+    - Whenever we wants some key's value then we can call it.
+
+5) Arithmatics ops. 
+
+    - we can also do the Arithmatics 
+
+
+6) how can we get current location ::
+    - like we do in the javascript we can use it same here but in component.ts
+    file.
+
+    Example :: 
+    siteUrl = window.location.href;

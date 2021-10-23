@@ -1,0 +1,15 @@
+
+
+
+############# Components 
+
+    - What is Components ?
+    
+    - Understand Components.
+
+        - 4 files in Components ?
+    
+    - Edit Components.
+
+    - Make new Component.
+    
