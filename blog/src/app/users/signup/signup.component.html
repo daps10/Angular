@@ -1,0 +1,40 @@
+<!-- <h3>signup component works!</h3> -->
+
+
+<!-- All important events -->
+
+<!-- click event -->
+<!-- <button (click)= 'getName(yourName)'>Get My Name</button>
+<br><br> -->
+<!-- keyup event -->
+<!-- <input type="text" #name (keyup.space)="getName(name.value)" /> -->
+
+<!-- keydown event -->
+<!-- <input type="text" (keydown)="getName('key down called')" />
+<br><br> -->
+<!-- blur event -->
+<!-- <input type="text" (blur)="getName('holle')" /> -->
+
+<!-- mouseover event -->
+<br><br><br>
+<!-- <div 
+(mouseleave)="myEvent('mouseover is called')"
+style="background-color: blue;" >
+    mouse over event
+</div> -->
+<!-- mouseleave event -->
+<!-- <input type="text" (mouseleave)="getName('holle')" /> -->
+
+
+
+<!-- Get textbox value in angular -->
+<input type="text" (keyup)="getVal($event)"/>
+
+<br><br>
+<!-- On button click print the value -->
+<input type="text" #box />
+<br><br>
+<button (click)="getVal(box.value)">Get value</button>
+
+<br><br>
+<h2>{{currentVal}}</h2>
