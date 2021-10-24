@@ -12,4 +12,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  name = "daps";
+
+  isDisable = true;
+  toggleEvent(){
+    this.isDisable = false;
+  }
 }
