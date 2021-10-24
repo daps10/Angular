@@ -1,0 +1,89 @@
+
+
+########### In this we can create function and called it.
+
+How to call a function in angular 
+
+    define function  :: 
+
+    - You can define function in the app.component.js file.
+    - So from this file whatever we can create that function we can call 
+    in the app.component.html page
+    
+
+    Make button and call function on button click.
+
+    - in app.component.html file we can create the html button like bellow way.
+        <button (click) = "<function-name and without params>" > abc </button>
+        <button (click) = "<abc()>" > abc </button>
+
+
+    pass params with function call.
+
+    - Same as the javascript if you wanna pass params in function call
+    then you can pass like bellow way.
+
+        <button (click) = "<function-name and with params>" > abc </button>
+        <button (click) = "<abc(abc)>" > abc </button>
+
+Note :: 
+1. Always create function in same component only.
+
+
+
+################### Important Events
+
+1. started with create event function in the app.component.js file.
+
+1) click() 
+    on button click
+2) keyup
+
+    we can takes user enter values with the help of id.value 
+    
+    example ::
+    <input type="text" #name (keyup)="getName(name.value)" />
+
+    keyup.enter :: 
+    with this way we can output while we press enter key.
+
+    keyup.space :: 
+    whenever we press space key at that time this will call.
+
+
+3) keydown
+
+    The keydown event is fired when a key is pressed. 
+        (event performed first and value written down later)
+    The keyup event is fired when a key is released.
+        (event performed later and value written down first)
+
+4) keyup with enter,space
+5) keydown with enter,space
+6) blur
+
+    This event is called when we click outside of the box. such like 
+    whenever we click outside of the input box at that time this event is fire,
+
+7) mouseover and mouseleave
+
+    The mouseover event is fired when a mouse come on that div.
+    The mouseleave event is fired when a mouse leave that div.
+
+
+8) get text value in angular :: 
+
+    - get value with value change
+
+        for this type of way we can use the 
+        <input type="text" (keyup)="getVal($event)"/>
+
+        and in component.ts file ::
+        just pick the value from the "event.target.value"
+        
+    - get value with button click
+
+        on button click get value for that we just need to add the id in the field
+        and on that value we can get in the component side and set it.
+
+        
