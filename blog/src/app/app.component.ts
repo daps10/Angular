@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  
+  // Strings
+  yourname ="daps chavhan";
+  //  onclick call function .
+  getName(name: any){
+    alert(name)
+  }
 
   // ############ Example for interpolation start #######//
 
-  // Strings
+  // // Strings
   // name ="daps chavhan";
 
   // Functions 
