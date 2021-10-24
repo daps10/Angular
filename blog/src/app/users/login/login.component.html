@@ -1,1 +1,9 @@
 <h3>Users login component!</h3>
+
+<!-- property binding -->
+<input type="text" [disabled]="isDisable"  [value]="name" />
+<br><br>
+<!-- interpolation -->
+<input type="text" disabled={{isDisable}} value={{name}} />
+<br><br>
+<button (click)="toggleEvent()">Enable</button>
