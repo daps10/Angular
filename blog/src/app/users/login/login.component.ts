@@ -11,11 +11,16 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  // name = "daps";
 
-  name = "daps";
+  // isDisable = true;
+  // toggleEvent(){
+  //   this.isDisable = false;
+  // }
 
-  isDisable = true;
-  toggleEvent(){
-    this.isDisable = false;
-  }
+  // If block
+  show="green"
+
+  // Switch block
+  color = "green"
 }
