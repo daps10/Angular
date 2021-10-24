@@ -19,8 +19,34 @@ export class LoginComponent implements OnInit {
   // }
 
   // If block
-  show="green"
+  // show="green"
 
   // Switch block
-  color = "green"
+  // color = "green"
+
+  // Define array for forloop
+  // data = ["daps","shrey","kunj","sheena"];
+
+  userData = [
+    {
+      name:"daps",
+      age : 26,
+      email :'daps@yahoo.com'
+    },
+    {
+      name:"shrey",
+      age : 21,
+      email :'shrey@yahoo.com'
+    },
+    {
+      name:"sheena",
+      age : 22,
+      email :'sheena@yahoo.com'
+    },
+    {
+      name:"kunj",
+      age : 25,
+      email :'kunj@yahoo.com'
+    }
+  ]
 }
