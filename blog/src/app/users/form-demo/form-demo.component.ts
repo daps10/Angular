@@ -12,4 +12,8 @@ export class FormDemoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // To get user entered value 
+  getUserValue (values:any) {
+    console.log(values)
+  }
 }

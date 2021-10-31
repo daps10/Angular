@@ -4,7 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormDemoComponent } from './form-demo/form-demo.component';
 
-
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { FormDemoComponent } from './form-demo/form-demo.component';
     FormDemoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    SharedModule
   ],
   exports : [
     LoginComponent,
