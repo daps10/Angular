@@ -1,0 +1,7 @@
+Create header and footer in angular.
+
+
+- created shared component which will use every where in the sides.
+- in that module createdtwo component header and footer.
+
+

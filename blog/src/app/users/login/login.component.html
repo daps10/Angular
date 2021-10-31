@@ -1,9 +1,84 @@
 <h3>Users login component!</h3>
 
 <!-- property binding -->
-<input type="text" [disabled]="isDisable"  [value]="name" />
-<br><br>
+<!-- <input type="text" [disabled]="isDisable"  [value]="name" /> -->
+<!-- <br><br> -->
 <!-- interpolation -->
-<input type="text" disabled={{isDisable}} value={{name}} />
-<br><br>
-<button (click)="toggleEvent()">Enable</button>
+<!-- <input type="text" disabled={{isDisable}} value={{name}} /> -->
+<!-- <br><br> -->
+<!-- <button (click)="toggleEvent()">Enable</button> -->
+
+<!-- conditions of statement -->
+<!-- <h3 *ngIf="show=='Yes' else elseBlock">IF Block</h3>
+<ng-template #elseBlock>
+    <h3>Else Block</h3>
+</ng-template> -->
+
+<!-- Separate both statement -->
+<!-- <h3 *ngIf= "show== 'True' then ifBlock else elseBlock"></h3>
+<ng-template #ifBlock>
+    <h3>If Block</h3>
+</ng-template>
+<ng-template #elseBlock>
+    <h3>Else Block</h3>
+</ng-template>  -->
+
+<!-- If..elseif blocks -->
+<!-- <ng-template [ngIf]='show=="red"'>
+    <h3>Red Block</h3>
+</ng-template>
+<ng-template [ngIf]='show=="green"'>
+    <h3>Green Block</h3>
+</ng-template>
+<ng-template [ngIf]='show=="blue"'>
+    <h3>Blue Block</h3>
+</ng-template> -->
+
+<!-- Switch case -->
+<!-- <div [ngSwitch]="color">
+    <h2 *ngSwitchCase="'red'" style="color: red;">
+        red color
+    </h2>
+    <h2 *ngSwitchCase="'blue'" style="color: blue;">
+        blue color
+    </h2>
+    <h2 *ngSwitchCase="'green'" style="color: green;">
+        green color
+    </h2>
+    <h2 *ngSwitchCase="'yellow'" style="color: yellow;">
+        yellow color
+    </h2>
+    <h2 *ngSwitchCase="'pink'" style="color: pink;">
+        pink color
+    </h2>
+</div> -->
+
+
+<!-- For loop -->
+
+<!-- normal loops -->
+<!-- <h4 *ngFor="let item of data">
+    {{item}}
+</h4> -->
+
+<!-- key value pairs -->
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+    </tr>
+    <!-- for...of -->
+    <tr *ngFor="let item of userData">
+        <td>
+            {{item.name}}
+        </td>
+        <td>
+            {{item.age}}
+        </td>
+        <td>
+            {{item.email}}
+        </td>
+    </tr>
+    
+</table>

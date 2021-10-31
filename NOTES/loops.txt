@@ -1,0 +1,7 @@
+
+For loop in Angular
+    - Make an array.
+    - apply for loop with it with html table.
+    - Make an array with object.
+    - apply for loop with if else with html table.
+    
