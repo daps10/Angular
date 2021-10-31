@@ -1,11 +1,12 @@
 <app-header></app-header>
 
-<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+<form #simpleForm="ngForm" ngClass="example-form" (ngSubmit)="getUserValue(simpleForm.value)">
     <input type="text" ngModel name="username" placeholder="Enter username"/><br> <br>
+    <input type="email" ngModel name="email" placeholder="Enter email"/><br> <br>
     <input type="text" ngModel name="age" placeholder="Enter age"/> <br> <br>
     <input type="text" ngModel name="address" placeholder="Enter address"/> <br><br>
 
-    <button >Get User Value</button>
+    <button mat-flat-button color="primary">Get User Value</button>
 </form>
 
 <app-footer></app-footer>

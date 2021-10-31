@@ -1,0 +1,46 @@
+
+
+Add bootstrap in angular :: 
+
+- Run command for install bootstrap.
+
+    command :: ng add @ng-bootstrap/ng-bootstrap
+
+- Try with some bootstrap example.
+
+- We check and use code from official website of ng-bootstrap
+
+
+
+
+
+material in angular ?
+
+- What is material UI ?
+
+    - its made by google. its useful for responsive website. all the UI
+    given by this is amazing.
+
+- install material 
+    ng add @angular/material
+
+
+- select some when while installing material
+
+- Use some component with example
+
+- such as slider and button.
+
+
+
+changes in the files :: 
+
+    style.css :: added some changes automatically.
+    angular.json :: added some added some style.
+    package.json :: added some dependencies.
+    app.module :: added browser animation file.
+
+
+How to use in the component :: 
+
+    - 
