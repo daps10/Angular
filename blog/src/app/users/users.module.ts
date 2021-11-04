@@ -11,6 +11,8 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
     SignupComponent,
     FormDemoComponent,
     StyleBindingComponent,
-    PipeDemoComponent
+    PipeDemoComponent,
+    UserListComponent,
+    UserDetailsComponent
   ],
   imports: [
     CommonModule,
