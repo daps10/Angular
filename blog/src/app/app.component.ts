@@ -44,4 +44,5 @@ export class AppComponent {
   // siteUrl = window.location.href;
 
   // ############ Example for interpolation end #######//
+  data="Testing";
 }
