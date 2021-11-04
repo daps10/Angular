@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+
+<h3> User Name ::  {{inputData.name}} </h3><br><br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Username</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of userData; let i = index" [attr.data-index]="i">
+                <td>#</td>
+                <td >{{item.name}}</td>
+                <td >{{item.email}}</td>
+                <td >{{item.username}}</td>
+                <td >{{item.phone}}</td>
+                <td >{{item.gender}}</td>
+                <td><button class="btn-danger" (click)="deleteRow({name:item.name,email:item.email,username:item.username})">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<app-footer></app-footer>
