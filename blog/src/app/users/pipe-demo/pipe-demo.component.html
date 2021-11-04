@@ -1,0 +1,46 @@
+<app-header></app-header>
+
+<h3> Pipe in angular </h3>
+<br>
+<p>
+    <!-- lowercase, upercase, titlecase -->
+    UpperCase Name  :: {{name | uppercase}} <br>
+    LowerCase Name  :: {{name | lowercase}} <br>
+    TitleCase Name  :: {{name | titlecase}} <br>
+
+    <!-- Date Formats -->
+    <br>
+    <!-- In timezone get time -->
+    Date1 :: {{ today | date }} <br> <!-- output is 'Jun 15, 2015' -->
+    Date2 :: {{ today | date:'medium' }}   <br> <!-- output is 'Jun 15, 2015, 9:43:11 PM' -->
+    Date3 :: {{ today | date:'shortTime' }} <br>  <!-- output is '9:43 PM' -->
+    Date4 :: {{ today | date:'mm:ss' }}  <br> <!-- output is '43:11' -->
+
+    <!-- Currency Examples -->
+    <br>
+    Currency1 :: {{ currencyAmount | currency }} <br> <!--output '$0.26'-->
+    Currency2 :: {{ currencyAmount | currency : 'CAD' }} <br> <!--output CA$10.00 -->
+    Currency3 :: {{ currencyAmount | currency : 'CAD' : 'code' }} <br> <!--output CAD10.00-->
+    Currency4 :: {{ currencyAmount | currency : 'CAD' : 'symbol':'2.1-4' }} <br> <!--output is base on in symbol => first indicate to total lenght of the value size.  => Second one indicate that decimal point after the value -->
+
+    <!-- Decimal Examples 
+    digitsInfo :: {minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}
+
+    minIntegerDigits: The minimum number of integer digits before the decimal point. Default is 1.
+
+    minFractionDigits: The minimum number of digits after the decimal point. Default is 0.
+
+    maxFractionDigits: The maximum number of digits after the decimal point. Default is 3.
+    -->
+    <br>
+    Decimal1 :: {{pi | number}} <br> <!--output: '3.142'-->
+    Decimal2 :: {{pi | number :'4.5-6'}}<br> <!--output: '0,003.14159'-->
+
+    <!-- Slice Examples -->
+    <br>
+    Slice1 :: {{sliceNumber | slice:2}} <br>
+    Slice1 :: {{sliceNumber | slice:2:5}} <br>
+</p>
+
+
+<!-- <app-footer></app-footer> -->
