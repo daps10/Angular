@@ -1,0 +1,82 @@
+Conditions in angular.
+    Make if Condition
+        - check the value is true or false.
+        - which comes from the component.
+
+        commands ::
+            - ngIf  => Use for the boolean value.
+            
+    Make if else Condition
+        -for if the condition is in the <h3> block.
+        - if the condition is false then else block called.
+
+        example :: 
+            <h3 *ngIf="show else elseBlock">IF Block</h3>
+            <ng-template #elseBlock>
+                <h3>Else Block</h3>
+            </ng-template>
+
+
+    Make condition with string
+        - for that we can make it like bellow way.
+        - for else block using the else block.
+
+        example :: 
+            <h3 *ngIf="show=='Yes' else elseBlock">IF Block</h3>
+            <ng-template #elseBlock>
+                <h3>Else Block</h3>
+            </ng-template>
+
+
+    Make elseif Condition
+        -elseif for condition you can use bellow way.
+
+        // example ::
+
+        <ng-template [ngIf]='show=="red"'>
+            <h3>Red Block</h3>
+        </ng-template>
+        <ng-template [ngIf]='show=="green"'>
+            <h3>Green Block</h3>
+        </ng-template>
+        <ng-template [ngIf]='show=="blue"'>
+            <h3>Blue Block</h3>
+        </ng-template>
+
+    Make condition with property binding
+
+        if you wanna make condition with property binding.
+        so you can use like [ngIf] way.
+
+
+=> Switch case :: 
+
+        - make a property color.
+            create property in the login.component.ts file.
+
+        - show data according to color name.
+            according to that use the switch case statement with the help 
+            of 
+
+            // this way....
+
+            <div [ngSwitch]="color">
+                <h2 *ngSwitchCase="'red'" style="color: red;">
+                    red color
+                </h2>
+                <h2 *ngSwitchCase="'blue'" style="color: blue;">
+                    blue color
+                </h2>
+                <h2 *ngSwitchCase="'green'" style="color: green;">
+                    green color
+                </h2>
+                <h2 *ngSwitchCase="'yellow'" style="color: yellow;">
+                    yellow color
+                </h2>
+                <h2 *ngSwitchCase="'pink'" style="color: pink;">
+                    pink color
+                </h2>
+            </div>
+
+
+            
