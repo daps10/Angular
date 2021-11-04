@@ -10,13 +10,15 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     SignupComponent,
     FormDemoComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    PipeDemoComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +32,8 @@ import {MatInputModule} from '@angular/material/input';
     LoginComponent,
     SignupComponent,
     FormDemoComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    PipeDemoComponent
   ]
 })
 export class UsersModule { }
