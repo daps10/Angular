@@ -5,3 +5,9 @@ h3 {
   padding: 20px;
   margin-bottom: 25px;
 }
+.navbar {
+  justify-content: space-between;
+}
+a {
+  padding-right: 1rem;
+}
