@@ -6,6 +6,7 @@ import { LoginComponent } from './users/login/login.component';
 import { PipeDemoComponent } from './users/pipe-demo/pipe-demo.component';
 import { SignupComponent } from './users/signup/signup.component';
 import { StyleBindingComponent } from './users/style-binding/style-binding.component';
+import { TodosComponent } from './users/todos/todos.component';
 import { UserDetailsComponent } from './users/user-details/user-details.component';
 import { UserListComponent } from './users/user-list/user-list.component';
 
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'users', component: UserListComponent },
   { path: 'userDetails/:id', component: UserDetailsComponent },
-  
+  { path: 'todos', component: TodosComponent },
   { path: 'formExample', component: FormDemoComponent },
   { path: 'styleBinding', component: StyleBindingComponent },
   { path: 'pipeExample', component: PipeDemoComponent },

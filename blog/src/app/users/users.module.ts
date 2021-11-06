@@ -13,6 +13,7 @@ import {MatInputModule} from '@angular/material/input';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { TodosComponent } from './todos/todos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     StyleBindingComponent,
     PipeDemoComponent,
     UserListComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    TodosComponent
   ],
   imports: [
     CommonModule,
