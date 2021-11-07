@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -45,4 +45,34 @@ export class AppComponent {
 
   // ############ Example for interpolation end #######//
   data="Testing";
+
+  constructor (private viewContainer:ViewContainerRef, 
+      private cfr: ComponentFactoryResolver
+    ) { }
+
+  // load the function
+  async loadAdmin(){
+    this.viewContainer.clear(); // Clear the used component.
+
+    // load the component which we gonna use.
+    const { LoginComponent } = await import('./admin/login/login.component');
+    
+    this.viewContainer.createComponent(
+      this.cfr.resolveComponentFactory(LoginComponent)
+    )
+
+  }
+
+  // load the function
+  async loadAdminList(){
+    this.viewContainer.clear(); // Clear the used component.
+
+    // load the component which we gonna use.
+    const { ProfileComponent } = await import('./admin/profile/profile.component');
+    
+    this.viewContainer.createComponent(
+      this.cfr.resolveComponentFactory(ProfileComponent)
+    )
+
+  }
 }
