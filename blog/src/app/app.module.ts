@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { AdminModule } from './admin/admin.module'
 import { UsersModule } from './users/users.module';
 import { SharedModule } from './shared/shared.module';
 import { ParentChildExchangeDataModule } from './parent-child-exchange-data/parent-child-exchange-data.module';
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http'
     BrowserAnimationsModule,
     MatButtonModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
