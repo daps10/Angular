@@ -1,5 +1,5 @@
-<h3>Users login component!</h3>
-
+<h3>Users login component!!!</h3>
+<a routerLink="../users">List</a>
 <!-- property binding -->
 <!-- <input type="text" [disabled]="isDisable"  [value]="name" /> -->
 <!-- <br><br> -->
@@ -62,15 +62,15 @@
 </h4> -->
 
 <!-- key value pairs -->
-<table border="1">
+<!-- <table border="1">
     <tr>
         <th>Name</th>
         <th>Age</th>
         <th>Email</th>
         <th>Category</th>
-    </tr>
+    </tr> -->
     <!-- for...of -->
-    <tr *ngFor="let item of userData">
+    <!-- <tr *ngFor="let item of userData">
         <td>
             {{item.name}}
         </td>
@@ -85,4 +85,6 @@
         </td>
     </tr>
     
-</table>
+</table> -->
+
+<router-outlet></router-outlet>

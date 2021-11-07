@@ -14,6 +14,7 @@ import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { TodosComponent } from './todos/todos.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TodosComponent } from './todos/todos.component';
     SharedModule,
     NgbModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    AppRoutingModule
   ],
   exports : [
     LoginComponent,
