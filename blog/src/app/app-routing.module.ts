@@ -9,6 +9,14 @@ const routes: Routes = [
   // {path : "", redirectTo:"/LoginComponent", pathMatch:"prefix"} // Only last value match and gives result.
   // {path : "", redirectTo:"/LoginComponent", pathMatch:"full"} // to check full routing
   // { path: '**',component:PageNotFoundComponent }
+
+  // For lazy loading load the component like bellow way.
+  // One time only one object created 
+  {
+    path :'lazy', loadChildren:() => import('./lazy-loading/lazy-loading.module')
+    .then(mode=>mode.LazyLoadingModule)
+  }
+
 ];
 
 @NgModule({
