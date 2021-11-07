@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminModule } from './admin/admin.module';
+import { ProfileComponent } from './admin/profile/profile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormDemoComponent } from './users/form-demo/form-demo.component';
 import { LoginComponent } from './users/login/login.component';
@@ -23,7 +25,7 @@ const routes: Routes = [
   { path: 'formExample', component: FormDemoComponent },
   { path: 'styleBinding', component: StyleBindingComponent },
   { path: 'pipeExample', component: PipeDemoComponent },
-  { path: '**',component:PageNotFoundComponent }
+  // { path: '**',component:PageNotFoundComponent }
 ];
 
 @NgModule({
