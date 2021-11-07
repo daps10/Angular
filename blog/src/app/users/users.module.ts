@@ -15,6 +15,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { TodosComponent } from './todos/todos.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { UsersRoutingModule } from './users-routing-module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AppRoutingModule } from '../app-routing.module';
     NgbModule,
     MatButtonModule,
     MatInputModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UsersRoutingModule
   ],
   exports : [
     LoginComponent,
