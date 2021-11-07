@@ -1,11 +1,13 @@
 <mat-toolbar color="primary" class="navbar">
   <div>AngularDemo</div>
   <div>
-    <a [routerLink]="['/login']" routerLinkActive="active">Login</a>
-    <a [routerLink]="['/signup']" routerLinkActive="active">Signup</a>
-    <a [routerLink]="['/users']" routerLinkActive="active">Users</a>
-    <a [routerLink]="['/formExample']" routerLinkActive="active">Forms</a>
-    <a [routerLink]="['/styleBinding']" routerLinkActive="active">styleBinding</a>
-    <a [routerLink]="['/pipeExample']" routerLinkActive="active">PipeExample</a>
+    <a [routerLink]="['']" routerLinkActive="active"></a>
+    <a [routerLink]="['admin/login']" routerLinkActive="active">Admin</a>
+    <a [routerLink]="['user/login']" routerLinkActive="active">Users</a>
+    <a [routerLink]="['user/signup']" routerLinkActive="active">Signup</a>
+    <a [routerLink]="['user/todos']" routerLinkActive="active">Todos</a>
+    <a [routerLink]="['user/formExample']" routerLinkActive="active">Forms</a>
+    <a [routerLink]="['user/styleBinding']" routerLinkActive="active">styleBinding</a>
+    <a [routerLink]="['user/pipeExample']" routerLinkActive="active">PipeExample</a>
   </div>
 </mat-toolbar>

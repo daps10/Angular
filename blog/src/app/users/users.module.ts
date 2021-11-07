@@ -13,6 +13,9 @@ import {MatInputModule} from '@angular/material/input';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { TodosComponent } from './todos/todos.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { UsersRoutingModule } from './users-routing-module';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     StyleBindingComponent,
     PipeDemoComponent,
     UserListComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    TodosComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +34,9 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     SharedModule,
     NgbModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    AppRoutingModule,
+    UsersRoutingModule
   ],
   exports : [
     LoginComponent,

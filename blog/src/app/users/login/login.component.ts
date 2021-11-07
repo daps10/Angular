@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+// To import the dummy service.
+import { DummyServicesService } from 'src/app/dummy-services.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  // inject dummy service in the constructor so we can use it.
+  name = "";
+  constructor(private data:DummyServicesService) { 
+    let category = this.data.getCategoryData();
+    this.name = category.name;
+  }
 
   ngOnInit(): void {
   }
