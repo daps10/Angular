@@ -28,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http'
     MatButtonModule,
     AppRoutingModule,
     HttpClientModule,
-    AdminModule
+    AdminModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
