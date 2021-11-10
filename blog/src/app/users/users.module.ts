@@ -16,6 +16,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { TodosComponent } from './todos/todos.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { UsersRoutingModule } from './users-routing-module';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UsersRoutingModule } from './users-routing-module';
     PipeDemoComponent,
     UserListComponent,
     UserDetailsComponent,
-    TodosComponent
+    TodosComponent,
+    EditProfileComponent
   ],
   imports: [
     CommonModule,
