@@ -1,0 +1,7 @@
+<h2>User edit profile (Reactive form)</h2>
+
+<form [formGroup]="editProfile" (ngSubmit)="collectionData()">
+    <input type="text" name="email" formControlName="email"><br><br>
+    <input type="password" name="password" formControlName="password"><br><br>
+    <button type="submit">Submit</button>
+</form>
