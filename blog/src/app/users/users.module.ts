@@ -4,7 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormDemoComponent } from './form-demo/form-demo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 
@@ -31,6 +31,7 @@ import { UsersRoutingModule } from './users-routing-module';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     SharedModule,
     NgbModule,
     MatButtonModule,
