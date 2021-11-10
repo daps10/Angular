@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http'
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     UsersModule,
     SharedModule,
     ParentChildExchangeDataModule,
@@ -29,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http'
     AppRoutingModule,
     HttpClientModule,
     AdminModule,
-    UsersModule
+    UsersModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
