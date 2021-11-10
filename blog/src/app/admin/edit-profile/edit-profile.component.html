@@ -1,0 +1,10 @@
+<h3>Edit Admin Profile</h3>
+<div class="col-sm-6 form-group mt-5">
+    <form #adminForm="ngForm" >
+        <input type="email" name="email" [ngModel]="userData.email" placeholder="Enter email"><br><br>
+        <input type="password" name="password" [ngModel]="userData.password" placeholder="Enter password"><br><br>
+        <input type="text" name="address" [ngModel]="userData.address" placeholder="Enter address"><br><br>
+        <input type="text" name="phone" [ngModel]="userData.phone" placeholder="Enter mobile" ><br><br>
+        <button type="submit">Submit</button>  
+    </form>
+</div>
