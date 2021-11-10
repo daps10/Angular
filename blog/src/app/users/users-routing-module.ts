@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { FormDemoComponent } from './form-demo/form-demo.component';
 import { LoginComponent } from './login/login.component';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
         { path: 'formExample', component: FormDemoComponent },
         { path: 'styleBinding', component: StyleBindingComponent },
         { path: 'pipeExample', component: PipeDemoComponent },
+        { path: 'editProfile', component: EditProfileComponent },
         { path: '**',component:PageNotFoundComponent }
     ]
   }
